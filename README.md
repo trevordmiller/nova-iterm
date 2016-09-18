@@ -2,4 +2,6 @@
 
 Nova color scheme plugin for iTerm
 
-[trevordmiller.github.io/nova-docs](https://trevordmiller.github.io/nova-docs)
+![Screenshot](/assets/screenshot.png?raw=true "Screenshot")
+
+**See the [documentation website](https://trevordmiller.github.io/nova) for more information**
