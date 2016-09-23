@@ -14,7 +14,7 @@
   "dependencies": {
     "handlebars": "4.0.5",
     "hex-rgb": "1.0.0",
-    "nova-colors": "1.0.7"
+    "nova-colors": "1.2.0"
   },
   "main": "src/index.js",
   "description": "Nova color scheme plugin for iTerm",
