@@ -3,8 +3,6 @@
   "version": "1.3.0",
   "scripts": {
     "start": "scripts/start",
-    "push": "scripts/push",
-    "lint": "scripts/lint",
     "build": "scripts/build"
   },
   "devDependencies": {
@@ -16,7 +14,7 @@
     "hex-rgb": "1.0.0",
     "nova-colors": "1.2.0"
   },
-  "main": "src/index.js",
+  "main": "build/nova.itermcolors",
   "description": "Nova color scheme plugin for iTerm",
   "homepage": "https://trevordmiller.github.io/nova",
   "author": "Trevor D. Miller <trevordmiller@icloud.com> (http://www.trevordmiller.com)",

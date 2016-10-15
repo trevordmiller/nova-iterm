@@ -2,5 +2,5 @@ language: node_js
 node_js:
   - "node"
   - "6"
-script: npm run lint
+script: npm run build
 # deploy happens automatically with GitHub tags
