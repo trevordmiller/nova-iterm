@@ -10,9 +10,9 @@ const hexToRGB = (hex) => {
   return { red, green, blue}
 }
 
-const rgbaNova = Object.keys(nova).reduce((result, key) => {
-  const mapOfRGB = Object.keys(nova[key]).reduce((memo, colorName) => {
-    memo[colorName] = hexToRGB(nova[key][colorName])
+const rgbaNova = Object.keys(nova.ansiGroups).reduce((result, key) => {
+  const mapOfRGB = Object.keys(nova.ansiGroups[key]).reduce((memo, colorName) => {
+    memo[colorName] = hexToRGB(nova.ansiGroups[key][colorName])
     return memo
   }, {})
   result[key] = mapOfRGB

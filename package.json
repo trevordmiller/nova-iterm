@@ -12,7 +12,7 @@
   "dependencies": {
     "handlebars": "4.0.5",
     "hex-rgb": "1.0.0",
-    "nova-colors": "1.2.0"
+    "nova-colors": "2.1.5"
   },
   "main": "build/nova.itermcolors",
   "description": "Nova color scheme plugin for iTerm",
