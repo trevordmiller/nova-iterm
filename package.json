@@ -18,6 +18,9 @@
   "description": "Nova color scheme plugin for iTerm",
   "homepage": "https://trevordmiller.github.io/nova",
   "author": "Trevor D. Miller (https://trevordmiller.com)",
+  "contributors": [
+    "Merrick Christensen (http://merrickchristensen.com)"
+  ],
   "license": "MIT",
   "keywords": [
     "iterm",
