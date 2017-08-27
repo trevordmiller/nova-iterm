@@ -1,9 +1,38 @@
 {
   "name": "nova-iterm",
   "version": "1.3.0",
+  "description": "Nova color scheme plugin for iTerm",
+  "keywords": [
+    "iterm",
+    "iterm-theme",
+    "color-scheme",
+    "colors"
+  ],
+  "repository": "trevordmiller/nova-iterm",
+  "author": "Trevor D. Miller (https://trevordmiller.com)",
+  "contributors": [
+    "Merrick Christensen (http://merrickchristensen.com)"
+  ],
+  "license": "MIT",
+  "main": "build/nova.itermcolors",
   "scripts": {
-    "dev": "scripts/dev",
-    "build": "scripts/build"
+    "dev": "watch 'npm run build' src",
+    "verify": "npm run lint && npm run build",
+    "lint": "eslint src",
+    "build": "scripts/build",
+    "release": "git checkout master && git pull && npm version && npm run build && git push && git push --tags"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    }
   },
   "devDependencies": {
     "eslint": "3.5.0",
@@ -13,23 +42,5 @@
     "handlebars": "4.0.5",
     "hex-rgb": "1.0.0",
     "nova-colors": "2.1.5"
-  },
-  "main": "build/nova.itermcolors",
-  "description": "Nova color scheme plugin for iTerm",
-  "homepage": "https://trevordmiller.github.io/nova",
-  "author": "Trevor D. Miller (https://trevordmiller.com)",
-  "contributors": [
-    "Merrick Christensen (http://merrickchristensen.com)"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "iterm",
-    "iterm-theme",
-    "color-scheme",
-    "colors"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trevordmiller/nova-iterm.git"
   }
 }
